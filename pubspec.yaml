@@ -1,0 +1,65 @@
+name: educloud
+description: "Local Gemma — on-device educational study hub."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_gemma: ^0.15.1
+
+  # Core UI
+  flutter_markdown: ^0.7.1
+  flutter_svg: ^2.0.10+1
+  confetti: ^0.7.0
+  graphview: ^1.3.0
+
+  # Local data + persistence
+  objectbox: ^5.3.1
+  objectbox_flutter_libs: any
+  shared_preferences: ^2.5.2
+  path_provider: ^2.1.5
+
+  # Networking + file IO
+  http: ^1.3.0
+  url_launcher: ^6.3.1
+  file_picker: ^8.1.2
+  syncfusion_flutter_pdf: ^24.1.41
+
+  # On-device RAG
+  langchain: ^0.8.1
+
+  # Knowledge share (host a local server + QR pairing)
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+  network_info_plus: ^6.0.0
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.1.1
+
+  # Text-to-speech for narrate-explanation tool
+  flutter_tts: ^4.2.2
+
+  # i18n
+  intl: ^0.19.0
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.4.11
+  objectbox_generator: any
+  source_gen: ^4.2.3
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/models/
